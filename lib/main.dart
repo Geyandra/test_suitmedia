@@ -6,6 +6,7 @@ import 'package:suitmedia_test/View/first_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+  
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => FirstScreenProvider()),
     ChangeNotifierProvider(create: (_) => ThirdScreenProvider())
@@ -13,6 +14,7 @@ void main() {
   child: const MyApp(),
   ));
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -27,7 +29,7 @@ class MyApp extends StatelessWidget {
                   textStyle: const TextStyle(fontWeight: FontWeight.w500))
               .fontFamily,
           useMaterial3: true),
-      home: const FirstScreen(),
+      home: FirstScreen(),
     );
   }
 }

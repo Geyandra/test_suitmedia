@@ -27,7 +27,7 @@ class SecondScreen extends StatelessWidget {
           text: "Choose a User",
           onPressed: () {
             Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => const ThirdScreen(),
+              builder: (context) => const ThirdScreenv2(),
             ));
           }),
       body: Stack(
